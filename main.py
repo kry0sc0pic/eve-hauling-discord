@@ -10,7 +10,7 @@ client = Client()
 
 @client.event
 async def on_ready():
-    activity = Game(f"on {len(client.servers)} servers", type=3)
+    activity = Game(f"Hauling Bot", type=3)
     await client.change_presence(status=Status.online, activity=activity)
     print("[READY] Bot is running.....")
 
