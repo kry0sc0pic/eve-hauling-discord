@@ -4,3 +4,4 @@
 /.vscode/
 /redfrogapi/__pycache__/
 PushXsample.xml
+/pushxapi/__pycache__/
