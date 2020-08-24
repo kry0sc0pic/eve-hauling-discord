@@ -28,6 +28,10 @@
 - Make an issue on this github repository
 - If it's something you don't want to share with other people , send a mail to: krysis21dev@gmail.com or DM me on the discord server. 
 
+## *Coming Soon:*
+- Support for PushX Industries
+- Price comparison between the two
+
 ## *License:*
 ## [MIT](https://choosealicense.com/licenses/mit/)
 
