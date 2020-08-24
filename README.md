@@ -5,7 +5,7 @@
 ## *Add the Bot:*
 - [Bot Invite](https://discord.com/api/oauth2/authorize?client_id=746789454118649877&permissions=84992&scope=bot)
 - Join the discord server:  
-[![](https://discordapp.com/api/guilds/746965559958044823/embed.png?style=banner1)](https://discord.gg/FCUEHfK)
+[![](https://discordapp.com/api/guilds/746965559958044823/embed.png?style=banner2)](https://discord.gg/FCUEHfK)
 
 ## *Bot Commands:*
 - `?rfa.help ` : Displays the help for the bot
