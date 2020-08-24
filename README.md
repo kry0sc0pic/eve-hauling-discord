@@ -29,8 +29,9 @@
 - If it's something you don't want to share with other people , send a mail to: krysis21dev@gmail.com or DM me on the discord server. 
 
 ## *Coming Soon:*
-- Support for PushX Industries
+- Support for PushX Freight
 - Price comparison between the two
+- Website for Bot
 
 ## *License:*
 ## [MIT](https://choosealicense.com/licenses/mit/)
