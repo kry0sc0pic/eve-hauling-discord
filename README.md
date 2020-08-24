@@ -29,7 +29,5 @@
 - If it's something you don't want to share with other people , send a mail to: krysis21dev@gmail.com or DM me on the discord server. 
 
 ## *License:*
-[MIT](https://choosealicense.com/licenses/mit/)
+## [MIT](https://choosealicense.com/licenses/mit/)
 
-## *Credit:*
-### The logo(profile pic) for this bot is taken from the [Red Frog Website](https://red-frog.org/).
