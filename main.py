@@ -26,7 +26,7 @@ async def on_message(message):
         bugEmbed.add_field(name="2) Github" , value="Make an issue on Github")
         bugEmbed.add_field(name="3) Something you don't want others to know?",value="DM me on discord or send a mail to: krysis21dev@gmail.com")
         bugEmbed.add_field(name="Discord Server Invite" , value="https://discord.gg/FCUEHfK")
-        bugEmbed.add_field(name="Github Repo" , value="https://github.com/krishaayjois21/red-frog-discord")
+        bugEmbed.add_field(name="Github Repo" , value="https://github.com/krishaayjois21/eve-hauling-discord")
         bugEmbed.set_footer(text="Like the bot? , please consider donating ISK to character TitaniumCodex ingame")
         await message.channel.send(content=None,embed=bugEmbed)
 
