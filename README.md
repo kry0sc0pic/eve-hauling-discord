@@ -1,5 +1,5 @@
 # Red Frog Discord Bot
-### A discord bot to calculate red frog freight and black frog freight prices for [EVE Online](https://eveonline.com) right from your discord server.
+### A discord bot to calculate red frog , black frog and PushX freight rates for [EVE Online](https://eveonline.com) right from your discord server.
 <br>
 
 ## *Add the Bot:*
