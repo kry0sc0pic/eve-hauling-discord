@@ -110,7 +110,7 @@ Black Frog: `?bf <origin>-><destination> collateral`
     Origin System: {data["origin_name"]}
     Destination System: {data["destination_name"]}
     Distance: {data["distance"]} LY
-    Max Collateral: {data["collateral"]} ISK
+    Collateral: {data["collateral"]} ISK
     Max Volume: {data["volume"]} m3
     Normal Reward: {data["reward_base"]} ISK
     Days To Complete: {data["days_to_complete"]}
