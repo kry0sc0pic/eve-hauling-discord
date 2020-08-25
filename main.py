@@ -71,7 +71,7 @@ Corp: {data["corporation"]}```
 """
             )
         except ValueError:
-            await message.send("""
+            await message.channel.send("""
 **Error Occurred**
 Make Sure you have provided all the details neccessary in this format:
 Red Frog: `?rf <origin>-><destination>`
