@@ -1,5 +1,5 @@
 from os import environ
-from discord import Client, Status, Game , Embed , Color
+from discord import Client, Status, Embed , Color , Activity , ActivityType
 from redfrogapi import red_frog, black_frog
 
 #token = "" #? Your Bot Token - For running locally
@@ -11,18 +11,18 @@ client = Client()
 @client.event
 async def on_ready():
     n_servers = len(client.guilds)
-    activity = Game(f"on {n_servers} servers")
+    activity = Activity(type=ActivityType.watching , name=f"{n_servers} servers")
     await client.change_presence(status=Status.online, activity=activity)
     print("[READY] Bot is running.....")
     print(f"on {n_servers} servers")
-    print(client.guilds)
+    
 
 @client.event
 async def on_guild_join(guild):
     print("Joined A new guild")
     print(guild.name)
     n_servers = len(client.guilds)
-    activity = Game(f"on {n_servers} servers")
+    activity = Activity(type=ActivityType.watching , name=f"{n_servers} servers")
     await client.change_presence(status=Status.online, activity=activity)
 @client.event
 async def on_message(message):
