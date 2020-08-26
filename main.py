@@ -11,13 +11,19 @@ client = Client()
 @client.event
 async def on_ready():
     n_servers = len(client.guilds)
-    activity = Game(f"on {n_servers} servers", type=3)
+    activity = Game(f"on {n_servers} servers")
     await client.change_presence(status=Status.online, activity=activity)
     print("[READY] Bot is running.....")
     print(f"on {n_servers} servers")
     print(client.guilds)
 
-
+@client.event
+async def on_guild_join(guild):
+    print("Joined A new guild")
+    print(guild.name)
+    n_servers = len(client.guilds)
+    activity = Game(f"on {n_servers} servers")
+    await client.change_presence(status=Status.online, activity=activity)
 @client.event
 async def on_message(message):
     if message.author == client.user:
