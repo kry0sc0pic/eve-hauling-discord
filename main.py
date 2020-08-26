@@ -15,6 +15,7 @@ async def on_ready():
     await client.change_presence(status=Status.online, activity=activity)
     print("[READY] Bot is running.....")
     print(f"on {n_servers} servers")
+    print(client.guilds)
 
 
 @client.event
