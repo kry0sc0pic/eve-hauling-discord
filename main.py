@@ -83,8 +83,8 @@ Corp: {data["corporation"]}```
             await message.channel.send("""
 **Error Occurred**
 Make Sure you have provided all the details neccessary in this format:
-Red Frog: `?rf <origin>-><destination>`
-Black Frog: `?bf <origin>-><destination> collateral`
+Red Frog: `?rf <origin>-><destination>` Example: `?rf.estimate jita->amarr`
+Black Frog: `?bf <origin>-><destination> collateral` Example: ?bf.estimate jita->amarr 1000000000
             """)
         except KeyError:
             err = data["error"]
