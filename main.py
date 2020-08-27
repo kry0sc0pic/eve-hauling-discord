@@ -38,6 +38,7 @@ async def on_message(message):
         bugEmbed.add_field(name="Github Repo" , value="https://github.com/krishaayjois21/eve-hauling-discord")
         bugEmbed.set_footer(text="Like the bot? , please consider donating ISK to character TitaniumCodex ingame")
         await message.channel.send(content=None,embed=bugEmbed)
+        print(f"{message.author}: {message.content}")
 
 #? Bot Help
     if message.content.startswith("?rfa.help"):
@@ -50,6 +51,7 @@ async def on_message(message):
         embed.add_field(name="Black Frog Example" , value="?bf.estimate jita->amarr 1000000000")
         embed.set_footer(text="Like the bot? , please consider donating ISK to character TitaniumCodex ingame")
         await message.channel.send(content=None , embed=embed)
+        print(f"{message.author}: {message.content}")
 
 
 #? Red Frog Estimate
@@ -79,6 +81,7 @@ Corp: {data["corporation"]}```
 *If you are including containers , put "container" in the contract description and consider a tip.*
 """
             )
+            print(f"{message.author}: {message.content}")
         except ValueError:
             await message.channel.send("""
 **Error Occurred**
@@ -86,12 +89,15 @@ Make Sure you have provided all the details neccessary in this format:
 Red Frog: `?rf <origin>-><destination>` Example: `?rf.estimate jita->amarr`
 Black Frog: `?bf <origin>-><destination> collateral` Example: `?bf.estimate jita->amarr 1000000000`
             """)
+            print(f"{message.author}: {message.content}")
         except KeyError:
             err = data["error"]
             if err == "Provided collateral exceed our maximum of 25000000000":
                 await message.channel.send("Collateral Exceeds maximum amount of 25000000000")
+                print(f"{message.author}: {message.content}")
             else:
                 await message.channel.send("Star System doesn't exist in RFA Database")
+                print(f"{message.author}: {message.content}")
         
         except Exception as e:
             await message.channel.send(
@@ -103,7 +109,7 @@ Black Frog: `?bf <origin>-><destination> collateral` Example: `?bf.estimate jita
                 https://discord.gg/FCUEHfK
                 """
             )
-
+            print(f"{message.author}: {message.content}")
 #? Black Frog Estimate
 
     if message.content.startswith("?bf.estimate") or message.content.startswith("?blackfrog.estimate"):
@@ -129,6 +135,7 @@ Black Frog: `?bf <origin>-><destination> collateral` Example: `?bf.estimate jita
     Citadel Service List: {data["service_list_url"]}```
     *If you are including containers , put "container" in the contract description and consider a tip.*
 """)
+            print(f"{message.author}: {message.content}")
         except ValueError:
             await message.channel.send("""
 **Error Occurred**
@@ -136,12 +143,15 @@ Make Sure you have provided all the details neccessary in this format:
 Red Frog: `?rf <origin>-><destination>`
 Black Frog: `?bf <origin>-><destination> collateral`
             """)
+            print(f"{message.author}: {message.content}")
         except KeyError:
             err = data["error"]
             if err == "Provided collateral exceed our maximum of 25000000000":
                 await message.channel.send("Collateral Exceeds maximum amount of 25000000000 ISK")
+                print(f"{message.author}: {message.content}")
             else:
                 await message.channel.send("Star System doesn't exist in RFA Database")
+                print(f"{message.author}: {message.content}")
  
         except Exception as e:
             await message.channel.send(
@@ -152,7 +162,7 @@ Black Frog: `?bf <origin>-><destination> collateral`
                 If this occurs repeatedly use to `?rsa.reportbug` command to report a bug and include the error message above.
                 """
             )
-
+            print(f"{message.author}: {message.content}")
 
 
 client.run(token)
