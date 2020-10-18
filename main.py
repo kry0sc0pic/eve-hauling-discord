@@ -3,10 +3,6 @@ import discord
 from discord.ext import commands
 import json
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c3a87e4980b6ae46a32d31db185222c5b690074
 client = commands.Bot(command_prefix="?")
 client.remove_command("help")
 
