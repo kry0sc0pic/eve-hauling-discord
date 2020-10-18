@@ -1,38 +1,51 @@
-# Red Frog Discord Bot
-### A discord bot to calculate red frog , black frog and PushX freight rates for [EVE Online](https://eveonline.com) right from your discord server.
+# EVE Hauling Bot
+
+![](https://images.evetech.net/types/28844/render?size=256)
+
+### A discord bot to calculate freight rates multiple freight services in [EVE Online](https://eveonline.com) right from your discord server.
 <br>
 
-## *Add the Bot:*
-- [Bot Invite](https://discord.com/api/oauth2/authorize?client_id=747308224570720306&permissions=84992&scope=bot)
-- Join the discord server:  
-[![](https://discordapp.com/api/guilds/746965559958044823/embed.png?style=banner2)](https://discord.gg/FCUEHfK)
+[![Issues](https://img.shields.io/github/issues/krishaayjois21/eve-hauling-discord?style=for-the-badge)](https://github.com/krishaayjois21/eve-hauling-discord/issues)
+[![License](https://img.shields.io/github/license/krishaayjois21/eve-hauling-discord?style=for-the-badge)](https://github.com/krishaayjois21/eve-hauling-discord/blob/master/LICENSE)
+[![Stars](https://img.shields.io/github/stars/krishaayjois21/eve-hauling-discord?style=for-the-badge)](https://github.com/krishaayjois21/eve-hauling-discord/stargazers)
+[![Forks](https://img.shields.io/github/forks/krishaayjois21/eve-hauling-discord?style=for-the-badge)](https://github.com/krishaayjois21/eve-hauling-discord/network/members)
+[![Python 3.8](https://img.shields.io/static/v1?label=Python&message=3.8&style=for-the-badge&color=)](https://www.python.org/downloads/release/python-386/)
+[![Deploy To Heroku](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=for-the-badge)](https://heroku.com/deploy?template=https://github.com/krishaayjois21/eve-hauling-discord/tree/master)
+[![Support Server](https://img.shields.io/discord/746965559958044823.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/FCUEHfK)
+[![Top.gg](https://img.shields.io/static/v1?label=TOP.GG&message=UPVOTE&style=for-the-badge&color=7289DA)](https://top.gg/bot/747308224570720306)
+[![Bot Invite](https://img.shields.io/static/v1?label=ADD%20THE%20BOT&message=INVITE&style=for-the-badge&color=7289DA&logo=discord)](https://discord.com/api/oauth2/authorize?client_id=747308224570720306&permissions=84992&scope=bot)
 
-## *Bot Commands:*
-- `?rfa.help ` : Displays the help for the bot
-- `?rfa.reportbug` : Gives instruction on how to report a bug
-- `?rf.estimate` : Estimate cost for red frog freight
-- `?bf.estimate` : Estimate cost for black frog freight
+# [Bot Command Cheatsheet](https://github.com/krishaayjois21/eve-hauling-discord/blob/master/docs/cheatsheet.md)
+## All the commands you need to use the bot
+<br>
 
-## *Examples:*
-- Red Frog Freight: `?rf.estimate Jita->Amarr`. Here the origin system is `Jita` and the destination is `Amarr`.
+## Prefix: `?`
+## Bot Help:  `?help`
+![Help Example](./assets/help.png)
+## Supported Services: `?list`
+![List Example](./assets/list.png)
+## Service Information: `?info <service_name>`
+- ## Example: `?info redfrog`
+![Info Example](./assets/info.png)
+## Get a Quote: `?<service_name> <origin> <destination> <collateral> <volume>`
+- ## Example: `?pushx Jita Amarr 10000 4567`
+![Quote Example](./assets/quote.png)
 
-- Black Frog Freight: `?bf.estimate Jita->T-NNJZ 1000000000`. Here the origin system is `Jita` and the destination system is `T-NNJZ` and the collateral is `1000000000` ISK.
 
 
-## *Donate:*
-- If you like this bot please consider donating ISK to `TitaniumCodex` ingame.
-
-## *Report Bugs:*
+## Report Bugs:
 ### If you encounter any issues (do any one of the following):
 - Post a message in the `#bugs-support` channel of the discord server (invite above) and please ping me.
 - Make an issue on this github repository
-- If it's something you don't want to share with other people , send a mail to: krysis21dev@gmail.com or DM me on the discord server. 
 
-## *Coming Soon:*
-- Support for PushX Freight
+## Donate:
+- If you like this bot please consider donating ISK to `TitaniumCodex` ingame.
+
+
+## Coming Soon:
 - Price comparison between the two
 - Website for Bot
 
-## *License:*
-## [MIT](https://choosealicense.com/licenses/mit/)
 
+### Copyright ###
+EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf.

@@ -1,0 +1,10 @@
+{
+    "extensions": [
+        "cogs.blackfrog",
+        "cogs.info",
+        "cogs.list",
+        "cogs.pushx",
+        "cogs.redfrog",
+        "cogs.help"
+    ]
+}
