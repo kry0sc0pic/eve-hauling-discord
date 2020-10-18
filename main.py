@@ -7,6 +7,10 @@ client = commands.Bot(command_prefix="?")
 client.remove_command("help")
 
 
+@client.event
+async def On_ready():
+    await client.change_presence(status=discord.Status.online , activity=discord.Activity(type=discord.ActivityType.playing , name="$help"))
+
 @client.command()
 async def load(ctx, extension):
     client.load_extension(f"cogs.{extension}")
