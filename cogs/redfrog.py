@@ -17,12 +17,14 @@ class RedFrog(commands.Cog):
         URL = f"https://red-frog.org/api/public/v1/calculator/red/?origin={origin}&destination={destination}"
         response = request("GET", URL, headers=headers, data=payload)
         data = loads(response.content.decode("utf-8"))
+        maxVolume = data["volume"]
+        maxCollat = data["collateral"]
         if data.get("error"):
             msg = data["error"]
             await ctx.send(f"**Error:** *{msg}*")
-        elif ((maxVolume := data["volume"]) <= int(volume)):
+        elif (maxVolume <= int(volume)):
             await ctx.send(f"**Error:** *Volume Above limit {maxVolume} m3*")
-        elif ((maxCollat := data["collateral"]) <= int(collateral)):
+        elif (maxCollat <= int(collateral)):
             await ctx.send(f"**Error:** *Collateral Above limit {maxCollat} ISK*")
         else:
             contractEmbed = discord.Embed(title="Red Frog Freight",

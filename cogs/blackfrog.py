@@ -18,10 +18,11 @@ class BlackFrog(commands.Cog):
         URL = f"https://red-frog.org/api/public/v1/calculator/black/?origin={origin}&destination={destination}&collateral={collateral}"
         response = request("GET", URL, headers=headers, data=payload)
         data = loads(response.content.decode("utf-8"))
+        maxVolume = data["volume"]
         if data.get("error"):
             msg = data["error"]
             await ctx.send(f"**Error:** *{msg}*")
-        elif ((maxVolume := data["volume"]) <= int(volume)):
+        elif (maxVolume <= int(volume)):
             await ctx.send(f"**Error:** *Volume Above limit {maxVolume}*")
         else:
             contractEmbed = discord.Embed(title="Black frog Freight",
