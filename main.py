@@ -33,4 +33,4 @@ with open("./config/config.json" , "r") as config:
     for ext in extension_list:
         client.load_extension(ext.strip())
 
-client.run(os.environ.get("BOT_TOKEN "))
+client.run(os.environ.get("BOT_TOKEN"))
