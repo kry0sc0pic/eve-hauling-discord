@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 import json
 
-TOKEN = "NzUzODM4MDA5OTM3Mjk3NDI5.X1sAWw.jz1LXH15hVmIjR7Yq8ZIaIJEDcY"
+
 client = commands.Bot(command_prefix="?")
 client.remove_command("help")
 
@@ -30,4 +30,4 @@ with open("./config/config.json" , "r") as config:
     for ext in extension_list:
         client.load_extension(ext.strip())
 
-client.run(TOKEN)
+client.run(os.environ.get("BOT_TOKEN "))
