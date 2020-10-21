@@ -3,5 +3,11 @@
     "description": "A discord bot to calculate freight rates multiple freight services in EVE Online right from your discord server.",
     "repository": "https://github.com/krishaayjois21/eve-hauling-discord",
     "logo": "https://images.evetech.net/types/28844/render",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Token for the Bot",
+            "required": true
+        }
+    }
     "keywords": []
 }
