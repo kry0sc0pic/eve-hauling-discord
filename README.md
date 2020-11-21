@@ -11,9 +11,6 @@
 [![Forks](https://img.shields.io/github/forks/krishaayjois21/eve-hauling-discord?style=for-the-badge)](https://github.com/krishaayjois21/eve-hauling-discord/network/members)
 [![Python 3.8](https://img.shields.io/static/v1?label=Python&message=3.8&style=for-the-badge&color=)](https://www.python.org/downloads/release/python-386/)
 [![Deploy To Heroku](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=for-the-badge)](https://heroku.com/deploy?template=https://github.com/krishaayjois21/eve-hauling-discord/tree/master)
-[![Support Server](https://img.shields.io/discord/746965559958044823.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/FCUEHfK)
-[![Top.gg](https://img.shields.io/static/v1?label=TOP.GG&message=UPVOTE&style=for-the-badge&color=7289DA)](https://top.gg/bot/747308224570720306)
-[![Bot Invite](https://img.shields.io/static/v1?label=ADD%20THE%20BOT&message=INVITE&style=for-the-badge&color=7289DA&logo=discord)](https://discord.com/api/oauth2/authorize?client_id=747308224570720306&permissions=84992&scope=bot)
 
 # [Bot Command Cheatsheet](https://github.com/krishaayjois21/eve-hauling-discord/blob/master/docs/cheatsheet.md)
 ## All the commands you need to use the bot
@@ -35,7 +32,6 @@
 
 ## Report Bugs:
 ### If you encounter any issues (do any one of the following):
-- Post a message in the `#bugs-support` channel of the discord server (invite above) and please ping me.
 - Make an issue on this github repository
 
 ## Donate:
